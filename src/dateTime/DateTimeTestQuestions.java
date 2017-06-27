@@ -1,5 +1,10 @@
 package dateTime;
 
+import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
+
 public class DateTimeTestQuestions {
 
 	public static void main(String[] args) {
@@ -96,14 +101,14 @@ public class DateTimeTestQuestions {
 		//
 		// This will get you the date out of the date/time
 		// String nowString = now.format(dateFormatter);
-		// System.out.println("Now: " + nowString);
+		// System.out.println("Now date: " + nowString);
 		//
 		//
 		// This will get you the time out of date/time
 		// DateTimeFormatter timeFormatter =
 		// DateTimeFormatter.ofPattern("HH:mm:ss");
 		// String timeString = now.format(timeFormatter);
-		// System.out.println("Now: " + timeString);
+		// System.out.println("Now time: " + timeString);
 
 	}
 
