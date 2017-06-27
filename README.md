@@ -62,6 +62,20 @@ Or.. you can create your own
 	System.out.printLn(getDrunkAndKickTheDogDate.format(f));
 	
 *NOTE* Eclipse public void parse();
+
+Durations are just one date minus another date.
+
+Time zone adjustments are made off of Greenwich mean time.
+	you can offset dates and times with the appropriate methods (as with the Date and Time classes 
+	above).
+	
+If you're trying to offset, you have to declare and initialize the appropriate offset class.
+
+*NOTE Eclipse public void timeZoneOffset();
+	
+	
+	
+	
 	
 
 

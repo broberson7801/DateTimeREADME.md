@@ -1,9 +1,5 @@
 package dateTime;
 
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.Month;
-
 public class DateTimeTestQuestions {
 
 	public static void main(String[] args) {
@@ -15,6 +11,7 @@ public class DateTimeTestQuestions {
 		questions.parse();
 		questions.dateTimeAndPeriodTogether(2);
 		questions.duration();
+		questions.timeZoneOffset();
 
 	}
 
@@ -72,17 +69,42 @@ public class DateTimeTestQuestions {
 		// Period months = Period.ofMonths(2);
 		// System.out.println(date.plus(days));
 		// System.out.println(date.minus(months));
-		//
+
 	}
 
 	public void duration() {
 
-		Duration timeUntilWifeComesHome;
-
-		LocalDateTime partyTime = LocalDateTime.of(2017, Month.JUNE, 28, 21, 30, 40, 490);
-		LocalDateTime partyOver = LocalDateTime.of(2017, Month.JUNE, 29, 02, 30, 25, 190);
-
-		timeUntilWifeComesHome = Duration.between(partyOver, partyTime);
-		System.out.println(timeUntilWifeComesHome);
+		// Duration timeUntilWifeComesHome;
+		//
+		// LocalDateTime partyTime = LocalDateTime.of(2017, Month.JUNE, 28, 21,
+		// 30, 40, 490);
+		// LocalDateTime partyOver = LocalDateTime.of(2017, Month.JUNE, 29, 02,
+		// 30, 25, 190);
+		//
+		// timeUntilWifeComesHome = Duration.between(partyOver, partyTime);
+		// System.out.println(timeUntilWifeComesHome);
 	}
+
+	public void timeZoneOffset() {
+		// LocalDateTime now = LocalDateTime.now();
+		// ZoneOffset offset = ZoneOffset.ofHours(3);
+		// OffsetDateTime today = OffsetDateTime.of(now, offset);
+		// System.out.println(today);
+		//
+		// DateTimeFormatter dateFormatter =
+		// DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		//
+		// This will get you the date out of the date/time
+		// String nowString = now.format(dateFormatter);
+		// System.out.println("Now: " + nowString);
+		//
+		//
+		// This will get you the time out of date/time
+		// DateTimeFormatter timeFormatter =
+		// DateTimeFormatter.ofPattern("HH:mm:ss");
+		// String timeString = now.format(timeFormatter);
+		// System.out.println("Now: " + timeString);
+
+	}
+
 }
